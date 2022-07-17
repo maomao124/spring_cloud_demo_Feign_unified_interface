@@ -1,4 +1,3 @@
-mao\order_service\entity\User.class
 mao\order_service\config\RestTemplateConfig.class
 mao\order_service\OrderServiceApplication.class
 mao\order_service\entity\Order.class
