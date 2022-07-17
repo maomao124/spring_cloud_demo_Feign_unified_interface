@@ -1,10 +1,7 @@
 package mao.order_service.config;
 
 
-import feign.Logger;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
+
 
 
 /**
