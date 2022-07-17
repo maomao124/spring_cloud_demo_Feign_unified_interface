@@ -74,6 +74,13 @@
             <artifactId>feign-httpclient</artifactId>
         </dependency>
 
+        <!--feign_api 依赖-->
+        <dependency>
+            <groupId>mao</groupId>
+            <artifactId>feign_api</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+
 
     </dependencies>
 
