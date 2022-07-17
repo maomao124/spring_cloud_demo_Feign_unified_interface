@@ -192,3 +192,20 @@ Consider defining a bean of type 'mao.feign.feign.UserClient' in your configurat
 2022-07-17 21:57:21.864  INFO 17012 --- [main] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client userservice initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=userservice,current list of Servers=[192.168.202.1:8082],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
 },Server stats: [[Server:192.168.202.1:8082;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
 ]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@238ad211
+2022-07-17 21:58:52.303  INFO 17012 --- [http-nio-8081-exec-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-17 21:58:52.304  INFO 17012 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-17 21:58:52.309  INFO 17012 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-07-17 21:58:52.500 DEBUG 17012 --- [http-nio-8081-exec-8] m.o.mapper.OrderMapper.findById          : ==>  Preparing: select * from tb_order where id = ?
+2022-07-17 21:58:52.516 DEBUG 17012 --- [http-nio-8081-exec-8] m.o.mapper.OrderMapper.findById          : ==> Parameters: 101(Long)
+2022-07-17 21:58:52.534 DEBUG 17012 --- [http-nio-8081-exec-8] m.o.mapper.OrderMapper.findById          : <==      Total: 1
+2022-07-17 21:58:52.537 DEBUG 17012 --- [http-nio-8081-exec-8] mao.feign.feign.UserClient               : [UserClient#queryById] ---> GET http://userservice/user/1 HTTP/1.1
+2022-07-17 21:58:52.538 DEBUG 17012 --- [http-nio-8081-exec-8] mao.feign.feign.UserClient               : [UserClient#queryById] ---> END HTTP (0-byte body)
+2022-07-17 21:58:52.908 DEBUG 17012 --- [http-nio-8081-exec-8] mao.feign.feign.UserClient               : [UserClient#queryById] <--- HTTP/1.1 200  (369ms)
+2022-07-17 21:58:52.909 DEBUG 17012 --- [http-nio-8081-exec-8] mao.feign.feign.UserClient               : [UserClient#queryById] connection: keep-alive
+2022-07-17 21:58:52.909 DEBUG 17012 --- [http-nio-8081-exec-8] mao.feign.feign.UserClient               : [UserClient#queryById] content-type: application/json
+2022-07-17 21:58:52.909 DEBUG 17012 --- [http-nio-8081-exec-8] mao.feign.feign.UserClient               : [UserClient#queryById] date: Sun, 17 Jul 2022 13:58:52 GMT
+2022-07-17 21:58:52.909 DEBUG 17012 --- [http-nio-8081-exec-8] mao.feign.feign.UserClient               : [UserClient#queryById] keep-alive: timeout=60
+2022-07-17 21:58:52.909 DEBUG 17012 --- [http-nio-8081-exec-8] mao.feign.feign.UserClient               : [UserClient#queryById] transfer-encoding: chunked
+2022-07-17 21:58:52.909 DEBUG 17012 --- [http-nio-8081-exec-8] mao.feign.feign.UserClient               : [UserClient#queryById] 
+2022-07-17 21:58:52.910 DEBUG 17012 --- [http-nio-8081-exec-8] mao.feign.feign.UserClient               : [UserClient#queryById] {"id":1,"username":"柳岩","address":"湖南省衡阳市"}
+2022-07-17 21:58:52.910 DEBUG 17012 --- [http-nio-8081-exec-8] mao.feign.feign.UserClient               : [UserClient#queryById] <--- END HTTP (59-byte body)
