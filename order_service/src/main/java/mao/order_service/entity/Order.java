@@ -1,5 +1,7 @@
 package mao.order_service.entity;
 
+import mao.feign.entity.User;
+
 /**
  * Project name(项目名称)：spring_cloud_demo
  * Package(包名): mao.order_service.entity

@@ -1,8 +1,9 @@
 package mao.order_service.service;
 
+import mao.feign.entity.User;
+import mao.feign.feign.UserClient;
 import mao.order_service.entity.Order;
-import mao.order_service.entity.User;
-import mao.order_service.feign.UserClient;
+
 import mao.order_service.mapper.OrderMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
